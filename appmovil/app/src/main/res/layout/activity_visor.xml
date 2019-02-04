@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <TextView
+        android:id="@+id/txtLegalVisor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/legal"
+        android:textAlignment="center"
+        android:textSize="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblEleccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elección" />
+
+        <Spinner
+            android:id="@+id/cboEleccion"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:entries="@array/TipoEleccion" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblRegionVisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Región     " />
+
+        <Spinner
+            android:id="@+id/cboRegionVisor"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProvinciaVisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provincia " />
+
+        <Spinner
+            android:id="@+id/cboProvinciaVisor"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblDistritoVisor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distrito    " />
+
+
+        <Spinner
+            android:id="@+id/cboDistritoVisor"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleCandidatosVisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">evaluometro</string>
+
+    <string name="title_region">Región</string>
+    <string name="title_provincia">Provincia</string>
+    <string name="title_distrito">Distrito</string>
+
+    <string name="title_visor">Visor</string>
+    <string name="title_configuracion">Configuración</string>
+    <string name="title_acerca">Acerca</string>
+    <string name="title_iniciar">Iniciar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imgCandidato">Candidato</string>
+    <string name="imgSiguiente">Sigueinte</string>
+    <string name="Nombre_candidato">Julio Perez Luna</string>
+    <string name="Nombre_Partido">Somos Lambayeque</string>
+    <string name="Foto_Partido">Partido</string>
+    <string name="porcentaje">20%</string>
+    <string name="cantidad_votos">125</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="correo">informes@evaluometro.pe</string>
+    <string name="acerca">Evaluometro te ayuda a informarte sobre los candidatos de las proximas elecciones Regionales y Municipales, mostrandote información sobre: Educación, Sentencias, Trabajos y Datos históricos partidarios.</string>
+    <string name="legal">Para el caso de las encuestas virtuales: "Los resultados de este sondeo son referenciales y no tienen sustento científico". Según lo establecido en la Res. Nº 0462-2017-JNE.</string>
+    <string name="legalvisor">"Los resultados de este sondeo son referenciales y no tienen sustento científico". Según lo establecido en la Resolución Nº 0462-2017-JNE.</string>
+    <string name="title_activity_visor_pdf">visorPdf</string>
+    <string-array name="TipoEleccion">
+        <item>Regional</item>
+        <item>Municipal Provincial</item>
+        <item>Municipal Distrital</item>
+    </string-array>
+</resources>

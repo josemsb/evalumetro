@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".registro"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/white_logo_color_background" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/txtClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nueva contraseña para la aplicación"
+            android:inputType="textPassword" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Género" />
+
+        <RadioGroup
+            android:id="@+id/opciones_Sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdbFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/rdbMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Masculino" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/lblFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Fecha de Nacimiento" />
+
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <ImageButton
+            android:id="@+id/btnFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_month" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblMensajeRegistroUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Selecciona tu distrito de votación.     " />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Región     " />
+
+        <Spinner
+            android:id="@+id/cboRegion"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblProvincia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provincia " />
+
+        <Spinner
+            android:id="@+id/cboProvincia"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lblDistrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distrito    " />
+
+
+        <Spinner
+            android:id="@+id/cboDistrito"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="3dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Regístrate"
+            android:textColor="@color/cardview_light_background" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

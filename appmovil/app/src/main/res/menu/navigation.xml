@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/navigation_region"
+    android:icon="@drawable/baseline_account_balance_white_24dp"
+    android:title="@string/title_region" />
+
+<item
+    android:id="@+id/navigation_provincia"
+    android:icon="@drawable/baseline_location_city_white_24dp"
+    android:title="@string/title_provincia" />
+
+<item
+    android:id="@+id/navigation_distrito"
+    android:icon="@drawable/baseline_store_mall_directory_white_24dp"
+    android:title="@string/title_distrito" />
+
+
+
+</menu>
